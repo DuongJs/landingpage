@@ -1,7 +1,7 @@
 
-  # Create Landing Page Design
+  # ULIS InternHub
 
-  This is a code bundle for Create Landing Page Design. The original project is available at https://www.figma.com/design/WlNLEmGRQI9kLxdsjMjRfQ/Create-Landing-Page-Design.
+  Landing page for ULIS InternHub - a student support site for preparing internship profiles.
 
   ## Running the code
 
