@@ -2,10 +2,10 @@ import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
 const highlights = [
-  'Gợi ý cách trình bày CV cho sinh viên chưa có nhiều kinh nghiệm',
-  'Nhấn mạnh các hoạt động, kỹ năng và minh chứng liên quan',
-  'Giúp hồ sơ thực tập nhìn rõ ràng, dễ theo dõi hơn',
-  'Phù hợp để sinh viên tham khảo trước khi hoàn thiện hồ sơ',
+  'Giới thiệu nhanh các khu vực chính trên website',
+  'Hướng dẫn xem tiêu chí, kho hồ sơ mẫu và tài liệu tham khảo',
+  'Chỉ cách tìm thông tin liên hệ và gửi form đăng ký hỗ trợ',
+  'Phù hợp để sinh viên tham khảo trước khi bắt đầu sử dụng web',
 ];
 
 export function VideoSection() {
@@ -31,11 +31,11 @@ export function VideoSection() {
               Video Hướng Dẫn
             </div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-              Chuẩn bị CV và hồ sơ{' '}
-              <span className="text-blue-400">thực tập chỉn chu</span>
+              Video hướng dẫn{' '}
+              <span className="text-blue-400">sử dụng website</span>
             </h2>
             <p className="text-blue-200 text-base leading-relaxed mb-8">
-              Một video tham khảo ngắn gọn về cách viết CV cho sinh viên, giúp bạn có thêm góc nhìn khi sắp xếp kinh nghiệm, kỹ năng và minh chứng trong hồ sơ thực tập.
+              Một video ngắn gọn hướng dẫn bạn cách sử dụng ULIS InternHub, từ xem tiêu chí, tham khảo kho hồ sơ mẫu đến đăng ký nhận hỗ trợ khi cần.
             </p>
 
             <ul className="space-y-3">
@@ -60,7 +60,7 @@ export function VideoSection() {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/dDMkDfLXeOQ"
-                title="Cách viết CV xin việc cho sinh viên khi chưa có kinh nghiệm"
+                title="Video hướng dẫn sử dụng website ULIS InternHub"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
