@@ -6,7 +6,7 @@ const highlights = [
     icon: Library,
     title: 'Thư viện thông tin',
     desc: 'Cung cấp đầy đủ tiêu chí hồ sơ, tài liệu mẫu và minh chứng trực quan.',
-    items: ['Kho tài liệu mẫu', 'Gợi ý các buổi toạ đàm', 'Upload và chia sẻ hồ sơ'],
+    items: ['Kho tài liệu mẫu', 'Gợi ý các buổi toạ đàm', 'Checklist minh chứng'],
     accent: 'blue',
   },
   {
@@ -25,7 +25,7 @@ const highlights = [
   },
   {
     icon: MessagesSquare,
-    title: 'Diễn đàn review thực tập',
+    title: 'Góc review, chia sẻ',
     items: ['Kinh nghiệm "xương máu"', 'Phân loại theo ngành học'],
     accent: 'violet',
   },
