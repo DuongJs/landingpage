@@ -1,29 +1,32 @@
 import { motion } from 'motion/react';
-import { Target, Compass, Users, Rocket } from 'lucide-react';
+import { Compass, Library, MessagesSquare, Users } from 'lucide-react';
 
 const highlights = [
   {
-    icon: Target,
-    title: 'Tiếp cận thông tin',
-    desc: 'Cung cấp đầy đủ tiêu chí hồ sơ, tài liệu mẫu, và minh chứng cần thiết trực quan.',
+    icon: Library,
+    title: 'Thư viện thông tin',
+    desc: 'Cung cấp đầy đủ tiêu chí hồ sơ, tài liệu mẫu và minh chứng trực quan.',
+    items: ['Kho tài liệu mẫu', 'Gợi ý các buổi toạ đàm', 'Upload và chia sẻ hồ sơ'],
     accent: 'blue',
-  },
-  {
-    icon: Compass,
-    title: 'Xây dựng lộ trình',
-    desc: 'Giúp sinh viên tạo ra lộ trình cá nhân hoá và theo dõi tiến độ hoàn thiện sát sao.',
-    accent: 'indigo',
   },
   {
     icon: Users,
     title: 'Cộng đồng kết nối',
-    desc: 'Trao đổi kinh nghiệm với các anh chị khoá trước và mạng lưới sinh viên ULIS.',
+    desc: 'Trao đổi kinh nghiệm với các anh chị khóa trước và mạng lưới sinh viên.',
+    items: ['Kết nối dựa theo ngành học', 'Hòm thư tư vấn 1:1'],
     accent: 'sky',
   },
   {
-    icon: Rocket,
-    title: 'Chủ động & Hiệu quả',
-    desc: 'Giảm thiểu khó khăn thường gặp, biến quá trình chuẩn bị trở nên dễ dàng.',
+    icon: Compass,
+    title: 'Xây dựng lộ trình',
+    desc: 'Giúp sinh viên tạo ra lộ trình cá nhân hóa và theo dõi tiến độ sát sao.',
+    items: ['Thanh tiến độ (%)', 'Nhắc nhở qua mail và thông báo'],
+    accent: 'indigo',
+  },
+  {
+    icon: MessagesSquare,
+    title: 'Diễn đàn review thực tập',
+    items: ['Kinh nghiệm "xương máu"', 'Phân loại theo ngành học'],
     accent: 'violet',
   },
 ];
@@ -115,9 +118,16 @@ export function About() {
                 <h3 className={`font-bold mb-3 text-xl ${isDark ? 'text-white' : 'text-blue-950'}`}>
                   {item.title}
                 </h3>
-                <p className={`text-base leading-relaxed ${isDark ? 'text-blue-100' : 'text-slate-600'}`}>
-                  {item.desc}
-                </p>
+                {item.desc && (
+                  <p className={`text-base leading-relaxed ${isDark ? 'text-blue-100' : 'text-slate-600'}`}>
+                    {item.desc}
+                  </p>
+                )}
+                <ul className={`mt-5 space-y-2 pl-5 list-disc text-sm leading-relaxed ${isDark ? 'text-blue-100 marker:text-blue-200' : 'text-slate-600 marker:text-blue-500'}`}>
+                  {item.items.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </motion.div>
             );
           })}
