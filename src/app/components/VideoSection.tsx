@@ -59,7 +59,7 @@ export function VideoSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.5)] border border-white/10 aspect-video bg-slate-800">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dDMkDfLXeOQ"
+                src="https://www.youtube.com/embed/Ih67XlrSPcY"
                 title="Video hướng dẫn sử dụng website ULIS InternHub"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
